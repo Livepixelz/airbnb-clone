@@ -1,0 +1,71 @@
+{
+  "name": "mastering-nuxt",
+  "dependencies": {
+    "@nuxtjs/cloudinary": "^1.0.3",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "body-parser": "^1.19.0",
+    "cloudinary-vue": "^1.1.2",
+    "cookie": "^0.4.1",
+    "filenamify": "^5.0.0",
+    "google-auth-library": "^7.3.0",
+    "js-cookie": "^2.2.1",
+    "nuxt": "^2.15.7",
+    "strip": "^3.0.0",
+    "stripe": "^8.165.0",
+    "uuid": "^8.3.2",
+    "v-calendar": "^2.3.1"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@nuxt/image": "^0.5.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-vue": "^7.14.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^10"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "airbnb-base",
+      "plugin:import/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "vue"
+    ],
+    "rules": {
+      "comma-dangle": [
+        "never"
+      ],
+      "semi": 0,
+      "import/newline-after-import": [
+        "error",
+        {
+          "count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "folders": [
+	{
+		"name": "airbnb-clone",
+		"path": "."
+	}
+],
+  "settings": {
+    "vetur.format.options.useTabs": true,
+    "vetur.completion.autoImport": false
+  }
+}

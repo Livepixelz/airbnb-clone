@@ -1,0 +1,21 @@
+#dependencies
+node_modules
+
+#osx hidden files
+.DS_Store
+
+#logs
+*.log
+
+#ide
+.idea
+.vscode
+
+#nuxt
+.nuxt
+dist
+report.*.json
+
+#env files
+.env
+
