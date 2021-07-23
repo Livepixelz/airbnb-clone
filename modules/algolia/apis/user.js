@@ -33,6 +33,27 @@ export default algoliaConfig => {
         return getErrorResponse(error)
       }
     },
+    bookHome: async (identityId, homeId, start, end) => {
+      try {
+        return unWrap(
+          await fetch(
+            `https://${algoliaConfig.appId}-dsn.algolia.net/1/indexes/users/${identityId}`,
+            {
+              headers,
+              method: 'PUT',
+              body: JSON.stringify({
+                userId: identityId,
+                homeId,
+                start,
+                end
+              })
+            }
+          )
+        )
+      } catch (error) {
+        return getErrorResponse(error)
+      }
+    },
     getById: async identity => {
       try {
         return unWrap(
