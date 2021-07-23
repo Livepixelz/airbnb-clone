@@ -1,8 +1,4 @@
 export default {
-  rootUrl:
-    process.env.NODE_ENV === 'production'
-      ? 'https://airbnb-clone-tau.vercel.app'
-      : 'http://localhost:3000',
   components: true,
   head: {
     titleTemplate: 'AirBnB Clone : %s',
@@ -56,6 +52,10 @@ export default {
     }
   },
   publicRuntimeConfig: {
+    rootUrl:
+      process.env.NODE_ENV === 'production'
+        ? 'https://airbnb-clone-tau.vercel.app'
+        : 'http://localhost:3000',
     auth: {
       cookieName: 'idToken',
       clientId: process.env.GOOGLE_AUTH_CLIENT_ID

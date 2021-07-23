@@ -3,7 +3,7 @@ import getApis from '../algolia/apis'
 import { rejectHistBadRequest, sendJSON } from '../helpers'
 
 export default function() {
-  const rootUrl = this.options.rootUrl
+  const rootUrl = this.options.publicRuntimeConfig.rootUrl
   const algoliaConfig = this.options.privateRuntimeConfig.algolia
   const apis = getApis(algoliaConfig)
   const secretKey = this.options.privateRuntimeConfig.stripe.secretKey
