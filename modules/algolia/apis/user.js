@@ -13,7 +13,6 @@ export default algoliaConfig => {
     },
     assignHome: async function(identity, homeId) {
       const payload = (await this.getById(identity)).json
-      console.log(payload)
       payload.homeId.push(homeId)
       this.create(identity, payload)
     },
@@ -37,7 +36,7 @@ export default algoliaConfig => {
       try {
         return unWrap(
           await fetch(
-            `https://${algoliaConfig.appId}-dsn.algolia.net/1/indexes/users/${identityId}`,
+            `https://${algoliaConfig.appId}-dsn.algolia.net/1/indexes/bookings/${identityId}`,
             {
               headers,
               method: 'PUT',
